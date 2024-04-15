@@ -39,3 +39,5 @@ host=localhost
 user=postgres
 password=1810
 port=5432
+
+Файл должен находиться в папке scr и называться database.ini
