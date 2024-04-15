@@ -26,7 +26,7 @@ def get_all_vacancies_by_employer_id(employer_id):
     url = 'https://api.hh.ru/vacancies'
     page = 0
     per_page = 100  # Максимальное количество вакансий на одной странице
-    while page < 1:
+    while page < 20:
         params = {'employer_id': employer_id, 'per_page': per_page, 'page': page}
         response = requests.get(url, params=params)
         if response.status_code == 200:
